@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="extra.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="first">
+        <div class="navbar">
+            <p>LOGO</p>
+            <nav>
+                <ul id="ul">
+                    <li>Home</li>
+                    <li>Services</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                    <li>Others</li>
+                    <i id="cross" class="fa-solid fa-xmark"></i>
+                </ul>
+                <i id="bugg" class="fa-solid fa-bars"></i>
+            </nav>
+        </div>
+        
+
+        <div class="content">
+            <p>Welcome</p>
+            <p>Hello,I am Saroj Aryal</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde numquam optio voluptates, qui cum corrupti!</p>
+            <button>Download CV</button>
+        </div>
+    </div>
+
+    <script>
+        let bug=document.getElementById('bugg');
+        let ull=document.getElementById('ul');
+        let x=document.getElementById('cross');
+
+        bug.addEventListener('click',function(){
+            ull.style.top='75px';
+            ull.style.opacity='1'
+        })
+        x.addEventListener('click',function(){
+            ull.style.top='-340px';
+            ull.style.opacity='0'
+            
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600|Nunito:400,600,700');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Nunito', sans-serif;
+}
+.first{
+    height: 100vh;
+    width: 100%;
+    background-image: url(Images/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+html{
+    font-size: 10px;
+    color: wheat;
+}
+.first .navbar p{
+    font-size: 4rem;
+    font-weight: bold;
+}
+.first .navbar{
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5%;
+    font-size: 2rem;
+    position: relative;
+    
+}
+.navbar ul li{
+    display: inline-block;
+    margin: 0 15px;
+}
+.navbar i{
+    position: absolute;
+    left: 92%;
+    top: 45%;
+    display: none;
+    z-index: 999;
+}
+.navbar ul i{
+    position: absolute;
+    left: 7%;
+    top: 3%;
+    font-size: 5rem;
+    
+}
+
+.first .content{
+    height: 20%;
+    width: 100%;
+    text-align: center;
+    margin-top: 10%;
+    position: fixed;
+}
+.content p:nth-child(1){
+    font-size: 2rem;
+}
+.content p:nth-child(2)
+{
+    font-size: 3.5rem;
+    margin: 15px 0;
+    font-weight: bold;
+}
+.content p:nth-child(3)
+{
+    font-size:1.5rem;
+    margin: 15px 0;
+}
+.content button{
+    padding: 15px 20px;
+    border-radius: 8px;
+    border: none;
+    background-color: aqua;
+    color: black;
+}
+
+@media (max-width:800px)
+{
+    .navbar ul{
+        background-color: rgb(255, 255, 255);
+        position: fixed;
+        top: 10%;
+        right: 0;
+        width: 100%;
+        height: 50vh;
+        padding-top: 50px;
+        transition: 0.5s;
+        z-index: -11;
+        color: black;
+    }
+    .navbar ul li{
+        margin: 30px 20px;
+        display: block;
+        color: black;
+        
+    }
+    .first .content{
+        margin-top: 30%;
+        padding: 10%;
+    }
+    html{
+        font-size: 8px;
+    }
+    .first{
+        height: 70vh;
+    }
+    .navbar i{
+        display: block;
+    }
+    .navbar{
+        background-color: whitesmoke;
+        color: black;
+        z-index: 99;
+    }
+}
